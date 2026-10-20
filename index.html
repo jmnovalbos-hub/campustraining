@@ -551,6 +551,45 @@ details.group[open] summary::after{content:"−"}
         <div class="chips" id="cpList"></div>
         <p style="font-size:14px;color:var(--muted)">Lista oficial completa en <a href="https://www.campustraining.es/cursos-certificados/" target="_blank" rel="noopener">la página de cursos adaptados</a>.</p>
       </section>
+      <div class="row"><a class="cta" href="#profia">Siguiente: ProfIA</a></div>
+    </div>
+
+    <div class="view" id="v-profia">
+      <div class="banner" data-b="profia"></div>
+      <div class="profia-grid">
+        <div>
+          <h3>Un profesor con IA, disponible siempre</h3>
+          <p>ProfIA es el asistente de estudio con inteligencia artificial del Grupo Northius, una herramienta transversal a todas sus marcas. Va integrado en el temario: cuando el alumno tiene una duda, no espera a la próxima clase ni a una respuesta por mensajería, sino que pregunta y obtiene la respuesta al momento, basada en el material de su curso.</p>
+          <p>Se usa sin límites. El alumno puede abrir el tema en PDF de forma tradicional o pulsar <b>Abrir con ProfIA</b> para estudiar con el asistente al lado.</p>
+          <div class="tip warn"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><p><b>Importante:</b> ProfIA no sustituye el contenido ni la metodología del curso, que se mantienen igual. Es un complemento al estudio.</p></div>
+        </div>
+        <div id="profiaMock"></div>
+      </div>
+      <section>
+        <h3>Qué puede hacer por el alumno</h3>
+        <div class="pillars" id="profiaFeat"></div>
+      </section>
+      <section>
+        <h3>Cómo ha evolucionado</h3>
+        <p>El despliegue empezó en las oposiciones del grupo y se ha ido ampliando curso a curso con nuevas funciones.</p>
+        <div class="timeline">
+          <div><b>Septiembre 2025</b>Primeros cursos con ProfIA.</div>
+          <div><b>Octubre 2025</b>Botón de resumen automático del tema y respuestas más rápidas.</div>
+          <div><b>Diciembre 2025</b>Llega el podcast del tema, de 4 a 6 partes de 10 a 20 minutos.</div>
+          <div><b>Enero 2026</b>Despliegue progresivo curso a curso en un gran número de formaciones. El podcast queda en piloto en algunas de ellas.</div>
+          <div><b>Marzo 2026</b>Nueva función de flashcards, basada en el recuerdo activo y la repetición espaciada.</div>
+          <div><b>Junio 2026</b>Sigue la ampliación a nuevas formaciones.</div>
+        </div>
+        <div class="tip warn"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><p><b>Antes de mencionarlo:</b> confirma que la formación concreta que ofreces tiene ProfIA activado y si incluye podcast. El despliegue es progresivo.</p></div>
+      </section>
+      <section>
+        <h3>Cómo presentarlo en la llamada</h3>
+        <div class="do-dont">
+          <div class="dd do"><h4>Sí</h4><ul><li>«Tendrás un profesor con IA dentro del temario que te resuelve dudas al momento, a cualquier hora.»</li><li>«Te hace resúmenes, te pone ejemplos y te prepara preguntas de repaso y flashcards.»</li><li>«Es un apoyo extra: el temario y el método siguen siendo los del curso, y tu tutor sigue contigo.»</li><li>Consejo para el alumno: cuanto más concreta sea la pregunta, mejor la respuesta.</li></ul></div>
+          <div class="dd dont"><h4>No</h4><ul><li>Decir que sustituye al profesor, al tutor o al temario.</li><li>Prometerlo en una formación sin haber confirmado que lo tiene activado.</li><li>Prometer el podcast en cualquier formación: está en piloto en unas pocas.</li><li>Decir que corrige exámenes oficiales o que garantiza aprobar.</li></ul></div>
+        </div>
+        <div class="tip"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span><p><b>Para la llamada:</b> ProfIA responde muy bien a la objeción «estudiar online solo es muy duro». Combínalo con el tutor y el centro presencial más cercano.</p></div>
+      </section>
       <div class="row"><a class="cta" href="#centros">Siguiente: la red de centros</a></div>
     </div>
 
@@ -668,6 +707,7 @@ const MODULES=[
  {id:'catalogo',t:'Catálogo',d:'Las tres líneas y todas sus formaciones',i:'grid',c:'#7348C9'},
  {id:'fichas',t:'Fichas destacadas',d:'Cómo presentar las formaciones clave',i:'cards',c:'#C2412D'},
  {id:'certificados',t:'Certificados de Profesionalidad',d:'Qué son y cómo explicarlos',i:'award',c:'#C27A08'},
+ {id:'profia',t:'ProfIA',d:'El profesor con IA del Grupo Northius',i:'spark',c:'#5B3AA8'},
  {id:'centros',t:'Centros',d:'Mapa de la red de delegaciones',i:'pin',c:'#0B7A57'},
  {id:'argumentario',t:'Cómo orientar',d:'Qué ofrecer según lo que busca',i:'route',c:'#2C64D6'},
  {id:'objeciones',t:'Objeciones',d:'Respuestas a las dudas habituales',i:'chat',c:'#7348C9'},
@@ -681,6 +721,7 @@ const BANNERS={
  catalogo:['Módulo 4','La mayor oferta formativa','Elige una línea para ver sus familias y formaciones, o busca por palabra clave. Cada formación enlaza a su ficha en campustraining.es.'],
  fichas:['Módulo 5','Fichas de formaciones destacadas','Las formaciones que la web pone en portada y las que más aparecen en las historias de alumnos, preparadas para la llamada.'],
  certificados:['Módulo 6','Certificados de Profesionalidad','Uno de los argumentos con más peso y también uno de los más delicados. Aquí aprendes a explicarlo con precisión.'],
+ profia:['','ProfIA: tu asistente de estudio','Un profesor con inteligencia artificial dentro del temario, común a todas las marcas del Grupo Northius: resuelve dudas al momento, resume, pone ejemplos y prepara repasos.'],
  centros:['Módulo 7','Más de 35 centros, muy cerca de ti','Las delegaciones presenciales complementan la formación online. Pulsa un punto del mapa o un nombre de la lista.'],
  argumentario:['Módulo 8','Cómo orientar según lo que busca','El formulario de la web pregunta «¿Qué te interesa?». Cada respuesta lleva a una línea distinta.'],
  objeciones:['Módulo 9','Tratamiento de objeciones','Las dudas más habituales, cómo responderlas con datos reales y qué no prometer nunca.'],
@@ -758,6 +799,10 @@ const OBJ=[
    ['Sí, al acabar te mandamos el certificado a casa.',0,'Incorrecto: Campus no expide el certificado. El alumno inicia un proceso de acreditación.'],
    ['Ese curso está adaptado al Certificado: al terminar puedes iniciar el proceso de acreditación con OMAT, entidad acreditada por ENAC, para obtener el reconocimiento oficial.',2,'Exacto: «adaptado» y «proceso de acreditación», sin prometer plazos.'],
    ['Sí, todos nuestros cursos dan certificado.',0,'Falso: solo los cursos adaptados, y mediante el proceso de acreditación.']],tip:'Revisa el apartado «Sí / No» del módulo 6.'},
+ {o:'«Estudiar online solo es muy duro. ¿Y si me atasco?»',opts:[
+   ['Tendrás ProfIA, un profesor con IA dentro del temario que te resuelve dudas al momento y te prepara resúmenes y preguntas de repaso, además de tu tutor y el centro más cercano.',2,'Perfecto: ProfIA más acompañamiento humano.'],
+   ['ProfIA te lo hace todo, ya no necesitas estudiar el temario.',0,'Falso: ProfIA no sustituye el temario ni la metodología.'],
+   ['Escríbele al tutor y en unos días te contesta.',1,'Cierto pero flojo: desaprovechas que ProfIA responde al instante.']],tip:'Confirma antes que la formación tiene ProfIA activado.'},
  {o:'«Me lo tengo que pensar.»',opts:[
    ['Claro. ¿Qué es lo que más te hace dudar: el contenido, el tiempo o el precio? Así te resuelvo eso antes de que lo decidas.',2,'Bien: identificas la duda real y mantienes viva la conversación.'],
    ['Si no te matriculas hoy pierdes la plaza para siempre.',0,'Presión falsa. Solo menciona plazos y convocatorias reales.'],
@@ -779,6 +824,8 @@ const QUIZ=[
  {q:'¿Con qué entidad inicia el alumno la acreditación tras un curso adaptado?',o:['ENAC','OMAT','AENOR','CECAP'],a:1,e:'OMAT, entidad acreditada por ENAC, ha analizado la correspondencia del programa.'},
  {q:'¿Cuál de estas formaciones da un título oficial?',o:['Curso de Auxiliar Enfermería','FP Grado Medio en Cuidados Auxiliares de Enfermería','Curso de Cocina Profesional','Curso de Doblaje'],a:1,e:'La FP Oficial da título oficial; el curso es titulación propia.'},
  {q:'Un alumno sin estudios quiere un curso. ¿Qué ventaja tienen los adaptados a Certificado de Profesionalidad?',o:['Son gratuitos','Se puede acceder sin estudios previos','Dan la ESO','Son presenciales'],a:1,e:'La web destaca la posibilidad de acceder sin estudios previos.'},
+ {q:'¿Qué es ProfIA?',o:['Un tutor humano por WhatsApp','Un asistente de estudio con IA integrado en el temario, común a las marcas del Grupo','Una app para hacer exámenes oficiales','Un sustituto del temario'],a:1,e:'Es el asistente con IA del Grupo Northius: complementa el temario y la metodología, sin sustituirlos.'},
+ {q:'¿Cuál de estas funciones NO hace ProfIA?',o:['Resúmenes del tema','Preguntas de autoevaluación','Flashcards','Corregir el examen oficial'],a:3,e:'Resume, pone ejemplos, busca referencias, crea preguntas de repaso, flashcards y, en algunos cursos, podcast.'},
  {q:'¿Qué certificación de empresa sostenible tiene Campus Training?',o:['B Corp','Fairtrade','LEED','EMAS'],a:0,e:'Es empresa certificada B Corp.'}
 ];
 const CENTROS=[
@@ -913,6 +960,9 @@ function renderStatic(){
   $('#motives').innerHTML=MOTIVES.map(m=>`<div class="motive" style="--lc:${CAT[m.line].color};--lt:${LINEMETA[m.line].t}"><div class="mh"><div class="ic">${ico(LINEMETA[m.line].i)}</div><div><p class="say">${m.say}</p><p class="to">Línea: <b>${CAT[m.line].name}</b></p></div></div><div class="mb"><ul>${m.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div></div>`).join('');
   // Objeciones (lista)
   $('#objList').innerHTML=OBJ.map(o=>{const b=o.opts.find(x=>x[1]===2);return `<details class="group" style="--lc:var(--c-opos)"><summary><span class="gdot"></span>${esc(o.o)}</summary><p style="margin:0 0 8px"><b>Responde:</b> ${esc(b[0])}</p><p style="margin:0 0 14px;color:var(--muted);font-size:15px">${esc(o.tip)}</p></details>`;}).join('');
+  // ProfIA
+  $('#profiaMock').innerHTML=`<div class="mock" role="img" aria-label="Ilustración de la pantalla de ProfIA"><div class="bar2"><i></i><i></i><i></i><span style="margin-left:8px">Tema 1 · Abrir con ProfIA</span></div><div class="split"><div class="pdf">Temario<span></span><span style="width:70%"></span><span></span><span style="width:50%"></span></div><div class="chatp"><div class="msg ai">Hola, soy ProfIA. Te ayudo a entender este tema: resúmenes, ejemplos, preguntas de repaso…</div><div class="msg me">Hazme 5 preguntas de repaso</div><div class="msg ai">Aquí tienes cinco preguntas basadas en el tema…</div><div class="tools">${[['doc','Resumen'],['mic','Podcast'],['cards','Flashcards'],['target','Preguntas']].map(([i,t])=>`<span>${ico(i,13)}${t}</span>`).join('')}</div></div></div></div><p style="font-size:13px;color:var(--muted)">Ilustración orientativa de la interfaz.</p>`;
+  $('#profiaFeat').innerHTML=[['chat','Resuelve dudas al momento','Respuestas inmediatas sobre el tema que está estudiando, sin límite de uso.','#5B3AA8'],['doc','Resúmenes del tema','Síntesis claras y un botón de resumen automático en un clic.','var(--brand)'],['bulb','Ejemplos concretos','Para entender y asimilar de forma práctica los conceptos difíciles.','var(--c-pl)'],['search','Busca en el temario','Encuentra referencias precisas dentro de todo el material del curso.','var(--c-fp)'],['target','Preguntas de repaso','Baterías de autoevaluación a petición del alumno o sugeridas por la herramienta.','#C2412D'],['cards','Flashcards','Tarjetas de pregunta y respuesta basadas en recuerdo activo y repetición espaciada.','#0E8F79'],['mic','Podcast del tema','De 4 a 6 partes de 10 a 20 minutos. En piloto en algunas formaciones.','#7348C9']].map(([i,b,p,c])=>`<div class="pillar" style="--pc:${c}"><div class="ic">${ico(i)}</div><b>${b}</b><p>${p}</p></div>`).join('');
   // Opiniones
   const AVC=['#0B7A57','#2C64D6','#C27A08','#7348C9','#C2412D','#0E8F79'];
   $('#quotes').innerHTML=QUOTES.map(([n,c,t],i)=>`<figure class="quote"><blockquote>${esc(t)}</blockquote><figcaption><span class="av" style="background:${AVC[i%6]}">${esc(n[0])}</span><span><b>${esc(n)}</b>${esc(c)}</span></figcaption></figure>`).join('');

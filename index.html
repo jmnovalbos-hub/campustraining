@@ -373,7 +373,7 @@ details.group[open] summary::after{content:"−"}
   .modules{grid-template-columns:repeat(4,1fr)}
   .pillars{grid-template-columns:repeat(4,1fr)}
   .fichas{grid-template-columns:repeat(5,1fr)}
-  .motives{grid-template-columns:repeat(4,1fr)}
+  .motives{grid-template-columns:repeat(3,1fr)}
   .quotes{grid-template-columns:repeat(3,1fr)}
   .avail{grid-template-columns:repeat(3,1fr)}
   .logo-wall{grid-template-columns:repeat(8,1fr)}
@@ -428,7 +428,7 @@ details.group[open] summary::after{content:"−"}
       <div class="banner" data-b="marca"></div>
       <div class="callout"><p style="font-size:20px;margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:600">«Formamos profesionales felices de ser profesionales.» Somos especialistas en formación para el empleo, con más de 15 años de experiencia, y te acompañamos hasta que trabajas de lo que te gusta.</p></div>
       <section>
-        <h3>Las cuatro líneas de formación</h3>
+        <h3>Las tres líneas de formación</h3>
         <div class="pillars" id="brandLines"></div>
       </section>
       <section>
@@ -484,9 +484,10 @@ details.group[open] summary::after{content:"−"}
       <div class="lines" id="lines"></div>
       <div class="chartbox"><h4 id="chartTitle">Formaciones por familia</h4><div id="famChart"></div></div>
       <div class="search">
-        <input id="q" type="search" placeholder="Busca una formación: enfermería, cocina, Guardia Civil…" aria-label="Buscar formación">
+        <input id="q" type="search" placeholder="Busca una formación: enfermería, cocina, DAM…" aria-label="Buscar formación">
         <label id="certWrap"><input type="checkbox" id="certOnly"> Solo adaptados a Certificados de Profesionalidad</label>
       </div>
+      <div class="tip warn"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><p><b>Oposiciones y veterinaria no son de Campus Training.</b> Las llevan otras marcas del grupo, Flou y Nubika. Si el alumno pregunta por ellas, derívalo según el procedimiento interno.</p></div>
       <p class="line-desc" id="lineDesc"></p>
       <div class="groups" id="groups"></div>
       <div class="callout sun" style="margin-top:28px">
@@ -541,7 +542,6 @@ details.group[open] summary::after{content:"−"}
             <tr><td><b>FP Oficial a distancia</b></td><td><span class="yes">✓ Sí</span></td><td>Título oficial de técnico de Grado Medio o Superior, con CEAC y Campus Training.</td></tr>
             <tr><td><b>Cursos adaptados a Certificado de Profesionalidad</b></td><td><span class="yes">✓ Sí, vía acreditación</span></td><td>Al terminar, el alumno puede iniciar el proceso para obtener el certificado oficial.</td></tr>
             <tr><td><b>Preparación de Pruebas Libres</b></td><td><span class="no">✕ La preparación no</span></td><td>Campus prepara; el título oficial se obtiene al aprobar el examen oficial.</td></tr>
-            <tr><td><b>Preparación de Oposiciones</b></td><td><span class="no">✕ La preparación no</span></td><td>Campus prepara el temario y las pruebas; la plaza se gana en el proceso selectivo.</td></tr>
             <tr><td><b>Titulaciones propias</b></td><td><span class="no">✕ No oficiales</span></td><td>Formación propia adaptada a lo que pide el mercado laboral, con prácticas y bolsa de empleo.</td></tr>
           </tbody>
         </table></div>
@@ -550,49 +550,6 @@ details.group[open] summary::after{content:"−"}
         <h3>Los <span id="cpCount"></span> cursos adaptados</h3>
         <div class="chips" id="cpList"></div>
         <p style="font-size:14px;color:var(--muted)">Lista oficial completa en <a href="https://www.campustraining.es/cursos-certificados/" target="_blank" rel="noopener">la página de cursos adaptados</a>.</p>
-      </section>
-      <div class="row"><a class="cta" href="#profia">Siguiente: ProfIA</a></div>
-    </div>
-
-    <div class="view" id="v-profia">
-      <div class="banner" data-b="profia"></div>
-      <div class="profia-grid">
-        <div>
-          <h3>Un profesor con IA, disponible siempre</h3>
-          <p>ProfIA es un asistente de estudio con inteligencia artificial integrado en el temario de las oposiciones. Cuando el alumno tiene una duda, no espera a la próxima clase ni a una respuesta por mensajería: pregunta y obtiene la respuesta al momento, basada en el material de su curso.</p>
-          <p>Se usa sin límites. El alumno puede abrir el tema en PDF de forma tradicional o pulsar <b>Abrir con ProfIA</b> para estudiar con el asistente al lado.</p>
-          <div class="tip warn"><span class="ic"></span><p><b>Importante:</b> ProfIA no sustituye el contenido ni la metodología del curso, que se mantienen igual. Es un complemento al estudio.</p></div>
-        </div>
-        <div id="profiaMock"></div>
-      </div>
-      <section>
-        <h3>Qué puede hacer por el alumno</h3>
-        <div class="pillars" id="profiaFeat"></div>
-      </section>
-      <section>
-        <h3>En qué oposiciones está disponible</h3>
-        <p>Según el último calendario de despliegue (junio de 2026). Lo que aparece como «Consultar» no figura en el calendario: confírmalo antes de mencionarlo.</p>
-        <div class="chips"><span class="chip"><span class="st y">ProfIA</span> Disponible</span><span class="chip"><span class="st pod">Podcast</span> Con podcast (piloto)</span><span class="chip"><span class="st n">No</span> Sin ProfIA</span><span class="chip"><span class="st q">Consultar</span> No figura en el calendario</span></div>
-        <div class="avail" id="profiaAvail"></div>
-      </section>
-      <section>
-        <h3>Cómo ha evolucionado</h3>
-        <div class="timeline">
-          <div><b>Septiembre 2025</b>Primer itinerario: Auxiliar y Técnico de Archivos y Bibliotecas.</div>
-          <div><b>Octubre 2025</b>Botón de resumen automático del tema y respuestas más rápidas.</div>
-          <div><b>Diciembre 2025</b>Llega el podcast del tema y se amplía a los itinerarios del Estado de Archivos y Bibliotecas.</div>
-          <div><b>Enero 2026</b>Despliegue curso a curso: Correos, Guardia Civil, administrativos, cuerpos de seguridad, Justicia, Hacienda, Seguridad Social, Educación y más.</div>
-          <div><b>Marzo 2026</b>Se suman Pedagogía Terapéutica y Agente Medioambiental. Nueva función de flashcards.</div>
-          <div><b>Junio 2026</b>Se incorpora en todos los itinerarios de Trabajo Social.</div>
-        </div>
-      </section>
-      <section>
-        <h3>Cómo presentarlo en la llamada</h3>
-        <div class="do-dont">
-          <div class="dd do"><h4>Sí</h4><ul><li>«Tendrás un profesor con IA dentro del temario que te resuelve dudas al momento, a cualquier hora.»</li><li>«Te hace resúmenes, te pone ejemplos y te prepara preguntas de repaso y flashcards.»</li><li>«Es un apoyo extra: el temario y el método de estudio siguen siendo los del curso.»</li><li>Consejo para el alumno: cuanto más concreta sea la pregunta, mejor la respuesta.</li></ul></div>
-          <div class="dd dont"><h4>No</h4><ul><li>Decir que sustituye al profesor, al tutor o al temario.</li><li>Ofrecerlo en Tropa y Marinería: no lo incluye.</li><li>Prometer el podcast en todas las oposiciones: está en piloto en unas pocas.</li><li>Ofrecerlo en cursos, FP o Pruebas Libres: el calendario solo cubre oposiciones.</li></ul></div>
-        </div>
-        <div class="tip"><span class="ic"></span><p><b>Para la llamada:</b> ProfIA responde muy bien a la objeción «estudiar una oposición solo es muy duro». Combínalo con el tutor y el centro presencial más cercano.</p></div>
       </section>
       <div class="row"><a class="cta" href="#centros">Siguiente: la red de centros</a></div>
     </div>
@@ -612,6 +569,7 @@ details.group[open] summary::after{content:"−"}
     <div class="view" id="v-argumentario">
       <div class="banner" data-b="argumentario"></div>
       <div class="motives" id="motives"></div>
+      <div class="tip warn"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><p><b>Oposiciones y veterinaria no son de Campus Training.</b> Las llevan otras marcas del grupo, Flou y Nubika. Si el alumno pregunta por ellas, derívalo según el procedimiento interno.</p></div>
       <div class="callout sun"><h3>Venta cruzada en cualquier caso</h3><p>Sea cual sea la formación elegida, la Especialización Dual en Emprendimiento e IA Generativa se suma como extra. El mensaje de la web: «No dejes tu formación a medias: súmale IA y llévate el pack completo».</p></div>
       <div class="row"><a class="cta" href="#objeciones">Siguiente: tratamiento de objeciones</a></div>
     </div>
@@ -707,10 +665,9 @@ const MODULES=[
  {id:'marca',t:'La marca',d:'Quién es Campus Training y qué promete',i:'star',c:'#0B7A57'},
  {id:'metodo',t:'Método Campus',d:'Los cuatro pilares de la formación',i:'compass',c:'#0E8F79'},
  {id:'empleo',t:'Empleabilidad',d:'Prácticas, empresas y bolsa de empleo',i:'brief',c:'#2C64D6'},
- {id:'catalogo',t:'Catálogo',d:'Las cuatro líneas y todas sus formaciones',i:'grid',c:'#7348C9'},
+ {id:'catalogo',t:'Catálogo',d:'Las tres líneas y todas sus formaciones',i:'grid',c:'#7348C9'},
  {id:'fichas',t:'Fichas destacadas',d:'Cómo presentar las formaciones clave',i:'cards',c:'#C2412D'},
  {id:'certificados',t:'Certificados de Profesionalidad',d:'Qué son y cómo explicarlos',i:'award',c:'#C27A08'},
- {id:'profia',t:'ProfIA',d:'El profesor con IA de las oposiciones',i:'spark',c:'#5B3AA8'},
  {id:'centros',t:'Centros',d:'Mapa de la red de delegaciones',i:'pin',c:'#0B7A57'},
  {id:'argumentario',t:'Cómo orientar',d:'Qué ofrecer según lo que busca',i:'route',c:'#2C64D6'},
  {id:'objeciones',t:'Objeciones',d:'Respuestas a las dudas habituales',i:'chat',c:'#7348C9'},
@@ -724,7 +681,6 @@ const BANNERS={
  catalogo:['Módulo 4','La mayor oferta formativa','Elige una línea para ver sus familias y formaciones, o busca por palabra clave. Cada formación enlaza a su ficha en campustraining.es.'],
  fichas:['Módulo 5','Fichas de formaciones destacadas','Las formaciones que la web pone en portada y las que más aparecen en las historias de alumnos, preparadas para la llamada.'],
  certificados:['Módulo 6','Certificados de Profesionalidad','Uno de los argumentos con más peso y también uno de los más delicados. Aquí aprendes a explicarlo con precisión.'],
- profia:['','ProfIA: tu asistente de estudio','Un profesor con inteligencia artificial dentro del temario de las oposiciones: resuelve dudas al momento, resume, pone ejemplos y prepara repasos.'],
  centros:['Módulo 7','Más de 35 centros, muy cerca de ti','Las delegaciones presenciales complementan la formación online. Pulsa un punto del mapa o un nombre de la lista.'],
  argumentario:['Módulo 8','Cómo orientar según lo que busca','El formulario de la web pregunta «¿Qué te interesa?». Cada respuesta lleva a una línea distinta.'],
  objeciones:['Módulo 9','Tratamiento de objeciones','Las dudas más habituales, cómo responderlas con datos reales y qué no prometer nunca.'],
@@ -733,7 +689,7 @@ const BANNERS={
  ranking:['Equipo','Ranking de asesores','Los puntos se calculan con tus mejores resultados y los módulos completados. Se actualiza en directo.']
 };
 const B='https://www.campustraining.es/';
-const CERT=new Set(['Asistente y Auxiliar Técnico Veterinario','Atención Sociosanitaria a Personas Dependientes en Instituciones Sociales','Auxiliar Veterinario Ecuestre','Auxiliar Veterinario y Cuidador de Animales de Zoológico','Barman. Servicios de bar y cafetería','Chapa y Pintura','Cocina Profesional','Cuidado Estético de Manos, Pies y Pestañas','Diseño de Moda, Corte y Confección','Electromecánica del Automóvil','Especialista en Instalación de Fontanería y Calefacción','Especialista en Jardinería. Diseño y Creación de Jardines','Experto en Floristería, Floricultura y Ornamentación','Gobernanta de Hotel','Nutrición Animal: Canina, Felina y Equina','Panadería, Bollería y Repostería','Peluquería Canina y Felina','Peluquería y Estilismo','Personal Trainer y Nutrición Deportiva','Instalador Electricista']);
+const CERT=new Set(['Atención Sociosanitaria a Personas Dependientes en Instituciones Sociales','Barman. Servicios de bar y cafetería','Chapa y Pintura','Cocina Profesional','Cuidado Estético de Manos, Pies y Pestañas','Diseño de Moda, Corte y Confección','Electromecánica del Automóvil','Especialista en Instalación de Fontanería y Calefacción','Especialista en Jardinería. Diseño y Creación de Jardines','Experto en Floristería, Floricultura y Ornamentación','Gobernanta de Hotel','Panadería, Bollería y Repostería','Peluquería y Estilismo','Personal Trainer y Nutrición Deportiva','Instalador Electricista']);
 const g=(name,path,items)=>({name,path,items});
 const CAT={
  cursos:{name:'Cursos',color:'var(--c-cursos)',desc:'Cursos online con apoyo presencial para empezar a trabajar de lo que te hace feliz, lograr un mejor trabajo o especializarte.',all:'cursos/',groups:[
@@ -747,7 +703,6 @@ const CAT={
   g('Publicidad y RRPP','cursos/publicidad-rrpp/',['Organización y Gestión de Eventos y Wedding Planner']),
   g('Salud','cursos/salud/',['Atención Sociosanitaria a Personas Dependientes en Instituciones Sociales','Auxiliar de Farmacia y Parafarmacia','Auxiliar de Óptica','Auxiliar de Pediatría','Auxiliar de Rehabilitación + Especialista en Quiromasaje','Auxiliar Enfermería','Auxiliar Odontología','Auxiliar Rehabilitación','Especialista en Análisis Clínicos de Laboratorio','Especialista en Dietética y Nutrición Vegetariana y Vegana','Especialista en Laboratorio de Análisis y Control de Calidad','Especialista en Quiromasaje','Experto en Dietética y Asesoramiento Nutricional','Personal Trainer y Nutrición Deportiva']),
   g('Turismo','cursos/turismo/',['Gobernanta de Hotel','Recepcionista de Hotel']),
-  g('Veterinaria','cursos/veterinaria/',['Acuariofilia y Especialista en Grandes Acuarios','Adiestramiento Canino','Asistente y Auxiliar Técnico Veterinario','Auxiliar de Fisioterapia y Rehabilitación Animal','Auxiliar Veterinario Ecuestre','Auxiliar Veterinario y Cuidador de Animales de Zoológico','Especialista en Grandes Mamíferos Terrestres','Herpetología','Intervención Asistida con Animales','Mamíferos Marinos','Nutrición Animal: Canina, Felina y Equina','Peluquería Canina y Felina','Técnico en Animales Exóticos']),
   g('Técnicos','cursos/tecnicos/',['Especialista en Instalación de Fontanería y Calefacción','Instalador de Aire Acondicionado y Climatización','Instalador Electricista'])
  ]},
  fp:{name:'FP Oficial',color:'var(--c-fp)',desc:'La mejor manera de sacarse el título oficial de técnico de Formación Profesional, con CEAC y Campus Training. Todo a distancia.',all:'fp-oficial/',groups:[
@@ -758,42 +713,26 @@ const CAT={
   g('Pruebas Libres de Accesos','pruebas-libres/acceso/',['Acceso a la Universidad para mayores de 25 años','Pruebas de Acceso a Ciclos Formativos Grado Superior']),
   g('Pruebas Libres de FP','pruebas-libres/fp/',['Grado Medio en Cocina y Gastronomía','Grado Medio en Cuidados Auxiliares de Enfermería','Grado Medio en Electromecánica de Vehículos','Grado Medio en Emergencias Sanitarias','Grado Medio en Estética y Belleza','Grado Medio en Farmacia y Parafarmacia','Grado Medio en Gestión Administrativa','Grado Medio en Sistemas Microinformáticos y Redes (SMR)','Grado Superior en Administración y Finanzas','Grado Superior en Anatomía Patológica y Citodiagnóstico','Grado Superior en Comercio Internacional','Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)','Grado Superior en Dietética','Grado Superior en Educación Infantil','Grado Superior en Gestión de Alojamientos Turísticos','Grado Superior en Gestión Forestal y del Medio Natural','Grado Superior en Higiene Bucodental','Grado Superior en Imagen para el Diagnóstico y Medicina Nuclear','Grado Superior en Integración Social','Grado Superior en Laboratorio Clínico y Biomédico','Grado Superior en Laboratorio de Análisis y Control de Calidad','Grado Superior en Radioterapia y Dosimetría','Técnico Superior en Administración de Sistemas Informáticos (ASIR)']),
   g('Pruebas Libres para Títulos Oficiales','pruebas-libres/titulos-oficiales/',['Graduado en Educación Secundaria Obligatoria (ESO)','Bachillerato'])
- ]},
- opos:{name:'Oposiciones',color:'var(--c-opos)',desc:'¿Quieres una plaza fija? Preparación de oposiciones con el mejor equipo y el mejor método.',all:'oposiciones/',groups:[
-  g('Administración y Archivo','oposiciones/administracion-archivo/',['Administrativo de Comunidades Autónomas','Administrativo de Corporaciones Locales','Administrativo del Estado','Auxiliar Administrativo Comunidad Autónoma','Auxiliar Administrativo Corporaciones Locales','Auxiliar Administrativo de Universidad','Auxiliar Administrativo del Estado','Auxiliar de Bibliotecas y Archivos del Estado','Correos','Cuerpo Gestión de la Administración Civil del Estado','Administrativo de la Seguridad Social','Auxiliar de Bibliotecas y Archivos de Corporaciones Locales','Gestión de la Seguridad Social','Subalterno de Corporaciones Locales','Operador Comercial Renfe','Subalterno de Comunidades Autónomas','Subalterno de Universidades','Técnico Auxiliar de Informática']),
-  g('Cuerpos y fuerzas de seguridad','oposiciones/cuerpos-seguridad/',['Agente Medioambiental del Estado','Bombero','Ertzaintza','Guardia Civil','Guardia Urbana',"Mossos d’Esquadra",'Policía Local','Policía Nacional']),
-  g('Educación','oposiciones/educacion/',['Geografía e Historia','Maestro de Educación Infantil','Maestro en Audición y Lenguaje','Maestro en Pedagogía Terapéutica','Maestros de Educación Primaria','Profesor de Biología y Geología','Profesor de Formación y Orientación Laboral (FOL)','Profesor de Lengua y Literatura','Profesor en Educación Física','Técnico en Educación Infantil']),
-  g('Hacienda','oposiciones/hacienda/',['Agente de Hacienda','Agente del Servicio de Vigilancia Aduanera','Técnico de Hacienda']),
-  g('Justicia','oposiciones/justicia/',['Auxilio Judicial','Gestión Procesal','Tramitación Procesal']),
-  g('Salud','oposiciones/salud/',['Auxiliar Administrativo de Salud']),
-  g('Ejército','oposiciones/ejercito/',['Tropa y Marinería']),
-  g('Prisiones','oposiciones/prisiones/',['Trabajador Social en Instituciones Penitenciarias','Ayudante Instituciones Penitenciarias','Técnico Especialista en Prisiones de Cataluña']),
-  g('Trabajo Social','oposiciones/trabajo-social/',['Trabajador Social del Estado','Trabajador Social en Servicios Sociales'])
  ]}
+
 };
 
-const PROFIA_NO=new Set(['Tropa y Marinería']);
-const PROFIA_Q=new Set(['Cuerpo Gestión de la Administración Civil del Estado','Técnico Auxiliar de Informática','Geografía e Historia','Maestro en Audición y Lenguaje','Profesor de Biología y Geología','Profesor de Formación y Orientación Laboral (FOL)','Profesor de Lengua y Literatura','Profesor en Educación Física','Gestión Procesal']);
-const PROFIA_POD=new Set(['Auxiliar de Bibliotecas y Archivos del Estado','Auxiliar de Bibliotecas y Archivos de Corporaciones Locales','Correos','Guardia Civil']);
-const profiaStatus=it=>PROFIA_NO.has(it)?'n':PROFIA_Q.has(it)?'q':'y';
 const LINEMETA={cursos:{i:'book',t:'var(--t-cursos)'},fp:{i:'cap',t:'var(--t-fp)'},pl:{i:'doc',t:'var(--t-pl)'},opos:{i:'shield',t:'var(--t-opos)'}};
 
 const FICHAS=[
  {id:'aux-enf',line:'cursos',fam:'Salud',path:'cursos/salud/auxiliar-enfermeria/',name:'Curso de Auxiliar Enfermería',i:'cross',tipo:'Titulación propia',perfil:'Personas que quieren trabajar pronto en el ámbito sanitario y valoran la formación práctica más que un título oficial.',logra:['Formación online con tutor y apoyo presencial','Prácticas en centros del sector cuando el programa las incluye','Bolsa de empleo durante 5 años'],say:'«Anne estudió este curso con nosotros y destaca a su tutora: aquí no estudias sola.»',preg:'¿Buscas empezar a trabajar cuanto antes o necesitas un título oficial para tu objetivo?',ruta:'Si necesita título oficial: FP de Grado Medio en Cuidados Auxiliares de Enfermería a distancia, o Pruebas Libres del mismo grado.',emp:'Quirónsalud'},
  {id:'fp-tcae',line:'fp',fam:'Grado Medio a distancia',path:'fp-oficial/grado-medio/cuidados-auxiliares-enfermeria-distancia/',name:'FP Grado Medio en Cuidados Auxiliares de Enfermería',i:'cap',tipo:'Título oficial',perfil:'Personas que necesitan el título oficial de técnico para optar a puestos que lo exigen.',logra:['Título oficial de técnico de Grado Medio','Modalidad a distancia, con CEAC y Campus Training','Acompañamiento durante toda la formación'],say:'«Es un título oficial de FP que puedes sacar a distancia, a tu ritmo, con CEAC y Campus Training.»',preg:'¿Cumples los requisitos de acceso a Grado Medio o necesitamos prepararlos antes?',ruta:'Sin requisitos de acceso: Pruebas Libres (ESO) primero. Si prefiere examinarse por libre: Pruebas Libres de Grado Medio en Cuidados Auxiliares de Enfermería.',emp:'Quirónsalud'},
- {id:'atv',line:'cursos',fam:'Veterinaria',path:'cursos/veterinaria/ayudante-tecnico-veterinario/',name:'Curso de Asistente y Auxiliar Técnico Veterinario',i:'paw',tipo:'Adaptado a Certificado de Profesionalidad',perfil:'Amantes de los animales que quieren convertir su afición en profesión en clínicas y hospitales veterinarios.',logra:['Programa adaptado al Certificado de Profesionalidad','Posibilidad de iniciar la acreditación con OMAT al terminar','Prácticas y bolsa de empleo'],say:'«Es un curso adaptado al Certificado de Profesionalidad: al terminar puedes iniciar el proceso para conseguir el reconocimiento oficial.»',preg:'¿Te ves en una clínica veterinaria o te atrae más otro ámbito, como zoológicos, caballos o peluquería canina?',ruta:'Especializaciones de Veterinaria: Auxiliar Veterinario Ecuestre, Cuidador de Animales de Zoológico, Peluquería Canina y Felina o Nutrición Animal.',emp:'Clínicas veterinarias de su zona'},
  {id:'electro',line:'cursos',fam:'Mecánica',path:'cursos/mecanica/electromecanica-automovil/',name:'Curso de Electromecánica del Automóvil',i:'car',tipo:'Adaptado a Certificado de Profesionalidad',perfil:'Personas con interés por la mecánica que buscan un oficio con demanda constante en talleres.',logra:['Programa adaptado al Certificado de Profesionalidad','Formación online con apoyo presencial','Prácticas y bolsa de empleo'],say:'«Sales preparado para trabajar en taller y con la vía abierta al Certificado de Profesionalidad.»',preg:'¿Tienes experiencia en taller o empezarías desde cero?',ruta:'Complementos: Chapa y Pintura o Mecánica de Motos. Si busca título oficial: Pruebas Libres de Grado Medio en Electromecánica de Vehículos.',emp:'Talleres y concesionarios'},
- {id:'infantil',line:'cursos',fam:'Educación',path:'cursos/educacion/educacion-infantil-jardin-infancia/',name:'Curso de Educación Infantil y Jardín de Infancia',i:'baby',tipo:'Titulación propia',perfil:'Personas a las que les gusta trabajar con niños y buscan formarse de forma práctica.',logra:['Formación online con tutor','Prácticas cuando el programa las incluye','Bolsa de empleo durante 5 años'],say:'«Te formas para trabajar con niños, con tutor y con prácticas para coger experiencia.»',preg:'¿Quieres trabajar en una escuela infantil? Allí suele exigirse el título oficial de técnico.',ruta:'Para trabajar como técnico en escuela infantil: FP de Grado Superior en Educación Infantil a distancia o sus Pruebas Libres. Para opositar: Técnico en Educación Infantil.',emp:'Escuelas infantiles y ludotecas'},
+ {id:'infantil',line:'cursos',fam:'Educación',path:'cursos/educacion/educacion-infantil-jardin-infancia/',name:'Curso de Educación Infantil y Jardín de Infancia',i:'baby',tipo:'Titulación propia',perfil:'Personas a las que les gusta trabajar con niños y buscan formarse de forma práctica.',logra:['Formación online con tutor','Prácticas cuando el programa las incluye','Bolsa de empleo durante 5 años'],say:'«Te formas para trabajar con niños, con tutor y con prácticas para coger experiencia.»',preg:'¿Quieres trabajar en una escuela infantil? Allí suele exigirse el título oficial de técnico.',ruta:'Para trabajar como técnico en escuela infantil: FP de Grado Superior en Educación Infantil a distancia o sus Pruebas Libres.',emp:'Escuelas infantiles y ludotecas'},
  {id:'farmacia',line:'cursos',fam:'Salud',path:'cursos/salud/auxiliar-farmacia-parafarmacia/',name:'Curso de Auxiliar de Farmacia y Parafarmacia',i:'pill',tipo:'Titulación propia',perfil:'Personas que quieren trabajar de cara al público en farmacias y parafarmacias.',logra:['Formación online con tutor','Prácticas cuando el programa las incluye','Bolsa de empleo durante 5 años'],say:'«Ramona consiguió trabajo en la primera farmacia a la que envió su currículum al terminar.»',preg:'¿Te basta con empezar a trabajar o quieres el título oficial de técnico en farmacia?',ruta:'Título oficial: FP de Grado Medio en Farmacia y Parafarmacia a distancia o sus Pruebas Libres.',emp:'Farmacias y parafarmacias'},
  {id:'cocina',line:'cursos',fam:'Cocina y Hostelería',path:'cursos/cocina-hosteleria/cocina-profesional/',name:'Curso de Cocina Profesional',i:'chef',tipo:'Adaptado a Certificado de Profesionalidad',perfil:'Personas que quieren entrar en hostelería o profesionalizar su pasión por la cocina.',logra:['Programa adaptado al Certificado de Profesionalidad','Prácticas y bolsa de empleo','Apoyo presencial en los centros'],say:'«Robinson necesitaba trabajar sí o sí y lo consiguió con este curso.»',preg:'¿Te interesa la cocina en general o una especialidad como panadería, repostería o barista?',ruta:'Especialidades: Panadería, Bollería y Repostería; Técnicas de Barista; Enología y Maridaje; Gestión de Catering y Restaurante.',emp:'Grupo Dani García'},
- {id:'gc',line:'opos',fam:'Cuerpos y fuerzas de seguridad',path:'oposiciones/cuerpos-seguridad/guardia-civil/',name:'Oposiciones Guardia Civil',i:'police',tipo:'Preparación de oposiciones',perfil:'Personas que buscan una plaza fija y estable en un cuerpo de seguridad.',logra:['Preparación con el equipo y el método de Campus','ProfIA: profesor con IA en el temario, con podcast del tema','Guía formativa gratuita en la web'],say:'«¿Quieres una plaza fija? Te preparamos con el mejor equipo y el mejor método.»',preg:'¿Cumples los requisitos de la convocatoria, como la titulación mínima?',ruta:'Si le falta titulación: Pruebas Libres de ESO. Alternativas del mismo bloque: Policía Nacional, Policía Local o Tropa y Marinería.',emp:'Empleo público'},
- {id:'eso',line:'pl',fam:'Pruebas Libres para Títulos Oficiales',path:'pruebas-libres/titulos-oficiales/educacion-secundaria-obligatoria-eso/',name:'Graduado en ESO',i:'doc',tipo:'Preparación de prueba oficial',perfil:'Adultos sin la ESO que la necesitan para trabajar, opositar o seguir estudiando.',logra:['Preparación para el examen oficial','Primer paso hacia FP Oficial u Oposiciones','Acompañamiento durante el estudio'],say:'«La ESO te abre la puerta a todo lo demás: FP, oposiciones y mejores empleos.»',preg:'¿Para qué necesitas la ESO? Así planteamos el siguiente paso desde hoy.',ruta:'Después: Bachillerato, Prueba de Acceso a Grado Superior, FP de Grado Medio u oposiciones que la exijan.',emp:'Itinerario formativo'},
- {id:'ayf',line:'fp',fam:'Grado Superior a distancia',path:'fp-oficial/grado-superior/administracion-finanzas-distancia/',name:'FP Grado Superior en Administración y Finanzas',i:'calc',tipo:'Título oficial',perfil:'Personas que trabajan o quieren trabajar en administración y buscan un título superior oficial.',logra:['Título oficial de técnico superior','Modalidad a distancia, con CEAC y Campus Training','Compatible con trabajar'],say:'«Un título oficial de técnico superior que puedes compatibilizar con tu trabajo.»',preg:'¿Tienes Bachillerato o necesitas la prueba de acceso a Grado Superior?',ruta:'Sin acceso: Curso de Pruebas de Acceso a Ciclos de Grado Superior. Por libre: Pruebas Libres de Grado Superior en Administración y Finanzas. Para opositar: Administración y Archivo.',emp:'Departamentos administrativos'}
+ {id:'eso',line:'pl',fam:'Pruebas Libres para Títulos Oficiales',path:'pruebas-libres/titulos-oficiales/educacion-secundaria-obligatoria-eso/',name:'Graduado en ESO',i:'doc',tipo:'Preparación de prueba oficial',perfil:'Adultos sin la ESO que la necesitan para trabajar o seguir estudiando.',logra:['Preparación para el examen oficial','Primer paso hacia FP Oficial y mejores empleos','Acompañamiento durante el estudio'],say:'«La ESO te abre la puerta a todo lo demás: FP y mejores empleos.»',preg:'¿Para qué necesitas la ESO? Así planteamos el siguiente paso desde hoy.',ruta:'Después: Bachillerato, Prueba de Acceso a Grado Superior o FP de Grado Medio.',emp:'Itinerario formativo'},
+ {id:'ayf',line:'fp',fam:'Grado Superior a distancia',path:'fp-oficial/grado-superior/administracion-finanzas-distancia/',name:'FP Grado Superior en Administración y Finanzas',i:'calc',tipo:'Título oficial',perfil:'Personas que trabajan o quieren trabajar en administración y buscan un título superior oficial.',logra:['Título oficial de técnico superior','Modalidad a distancia, con CEAC y Campus Training','Compatible con trabajar'],say:'«Un título oficial de técnico superior que puedes compatibilizar con tu trabajo.»',preg:'¿Tienes Bachillerato o necesitas la prueba de acceso a Grado Superior?',ruta:'Sin acceso: Curso de Pruebas de Acceso a Ciclos de Grado Superior. Por libre: Pruebas Libres de Grado Superior en Administración y Finanzas.',emp:'Departamentos administrativos'}
 ];
 const OBJ=[
  {o:'«¿Esto es oficial? ¿Está homologado?»',best:'Depende de la formación: la FP es título oficial y los cursos adaptados permiten optar al Certificado de Profesionalidad. Te explico qué consigues exactamente con la que te interesa.',opts:[
    ['Depende de la formación: la FP es título oficial y los cursos adaptados permiten optar al Certificado de Profesionalidad. Te explico qué consigues exactamente con la que te interesa.',2,'Exacto: distingues por tipo de formación y le das la respuesta concreta.'],
-   ['Sí, todos nuestros cursos son oficiales y homologados.',0,'Falso: las titulaciones propias y la preparación de pruebas libres u oposiciones no son títulos oficiales.'],
+   ['Sí, todos nuestros cursos son oficiales y homologados.',0,'Falso: las titulaciones propias y la preparación de Pruebas Libres no son títulos oficiales.'],
    ['Eso da igual, lo importante es lo que aprendes.',1,'Esquiva la pregunta. Al alumno le importa y tienes una respuesta buena que dar.']],tip:'Usa la tabla de homologación del módulo 6. Campus es además centro colaborador de la Universidad Nebrija.'},
  {o:'«Es muy caro.»',opts:[
    ['Si te matriculas ahora mismo te hago un descuento especial solo para ti.',0,'No inventes condiciones. Las promociones son las vigentes y oficiales.'],
@@ -806,7 +745,7 @@ const OBJ=[
  {o:'«Online me desmotivo, no me fío.»',opts:[
    ['No estás solo: tienes un tutor de principio a fin, masterclasses y seminarios, y un centro presencial cerca. ¿Dónde vives? Te digo cuál es el tuyo.',2,'Muy bien: combinas acompañamiento y centro físico, y lo concretas.'],
    ['Hoy en día todo es online, te acostumbrarás.',1,'No responde a su miedo real: estudiar solo.'],
-   ['Puedes hacerlo todo presencial en el centro si quieres.',0,'Falso: los cursos son online con apoyo presencial, no presenciales.']],tip:'Nombra el centro concreto más cercano (módulo Centros). Si es una oposición, menciona ProfIA.'},
+   ['Puedes hacerlo todo presencial en el centro si quieres.',0,'Falso: los cursos son online con apoyo presencial, no presenciales.']],tip:'Nombra el centro concreto más cercano (módulo Centros).'},
  {o:'«No tengo estudios.»',opts:[
    ['Sin la ESO no podemos hacer nada por ti.',0,'Falso: hay cursos sin requisitos y preparación de Pruebas Libres.'],
    ['Hay opciones: los cursos adaptados a Certificado de Profesionalidad permiten acceder sin estudios previos, y si quieres la ESO te preparamos las Pruebas Libres.',2,'Correcto y completo: dos caminos reales.'],
@@ -819,10 +758,6 @@ const OBJ=[
    ['Sí, al acabar te mandamos el certificado a casa.',0,'Incorrecto: Campus no expide el certificado. El alumno inicia un proceso de acreditación.'],
    ['Ese curso está adaptado al Certificado: al terminar puedes iniciar el proceso de acreditación con OMAT, entidad acreditada por ENAC, para obtener el reconocimiento oficial.',2,'Exacto: «adaptado» y «proceso de acreditación», sin prometer plazos.'],
    ['Sí, todos nuestros cursos dan certificado.',0,'Falso: solo los cursos adaptados, y mediante el proceso de acreditación.']],tip:'Revisa el apartado «Sí / No» del módulo 6.'},
- {o:'«Estudiar una oposición solo en casa es muy duro. ¿Y si me atasco?»',opts:[
-   ['Tendrás ProfIA, un profesor con IA dentro del temario que te resuelve dudas al momento y te prepara resúmenes y preguntas de repaso, además de tu tutor y el centro más cercano.',2,'Perfecto: ProfIA más acompañamiento humano.'],
-   ['ProfIA te lo hace todo, ya no necesitas estudiar el temario.',0,'Falso: ProfIA no sustituye el temario ni la metodología.'],
-   ['Escríbele al tutor y en unos días te contesta.',1,'Cierto pero flojo: desaprovechas que ProfIA responde al instante.']],tip:'ProfIA está en casi todas las oposiciones; no en Tropa y Marinería.'},
  {o:'«Me lo tengo que pensar.»',opts:[
    ['Claro. ¿Qué es lo que más te hace dudar: el contenido, el tiempo o el precio? Así te resuelvo eso antes de que lo decidas.',2,'Bien: identificas la duda real y mantienes viva la conversación.'],
    ['Si no te matriculas hoy pierdes la plaza para siempre.',0,'Presión falsa. Solo menciona plazos y convocatorias reales.'],
@@ -842,11 +777,8 @@ const QUIZ=[
  {q:'¿Quién autoriza a Campus como agencia de colocación?',o:['La Seguridad Social','EURES','El Sistema Nacional de Empleo','Randstad'],a:2,e:'El Sistema Nacional de Empleo.'},
  {q:'¿Quién reconoce el Certificado de Profesionalidad?',o:['El SEPE','La Universidad Nebrija','CEAC','Campus Training'],a:0,e:'Lo reconoce el SEPE y es válido en España y la UE.'},
  {q:'¿Con qué entidad inicia el alumno la acreditación tras un curso adaptado?',o:['ENAC','OMAT','AENOR','CECAP'],a:1,e:'OMAT, entidad acreditada por ENAC, ha analizado la correspondencia del programa.'},
- {q:'¿Cuál de estas formaciones da un título oficial?',o:['Curso de Auxiliar Enfermería','FP Grado Medio en Cuidados Auxiliares de Enfermería','Preparación de Oposiciones Guardia Civil','Curso de Doblaje'],a:1,e:'La FP Oficial da título oficial; el curso es titulación propia.'},
+ {q:'¿Cuál de estas formaciones da un título oficial?',o:['Curso de Auxiliar Enfermería','FP Grado Medio en Cuidados Auxiliares de Enfermería','Curso de Cocina Profesional','Curso de Doblaje'],a:1,e:'La FP Oficial da título oficial; el curso es titulación propia.'},
  {q:'Un alumno sin estudios quiere un curso. ¿Qué ventaja tienen los adaptados a Certificado de Profesionalidad?',o:['Son gratuitos','Se puede acceder sin estudios previos','Dan la ESO','Son presenciales'],a:1,e:'La web destaca la posibilidad de acceder sin estudios previos.'},
- {q:'¿Qué es ProfIA?',o:['Un tutor humano por WhatsApp','Un asistente de estudio con IA integrado en el temario de las oposiciones','Una app para hacer exámenes oficiales','Un sustituto del temario'],a:1,e:'Es un asistente con IA que complementa el temario y la metodología, sin sustituirlos.'},
- {q:'¿Qué oposición NO cuenta con ProfIA?',o:['Guardia Civil','Correos','Tropa y Marinería','Policía Nacional'],a:2,e:'Tropa y Marinería no lo incluye por la lógica de su temario.'},
- {q:'¿Cuál de estas funciones NO hace ProfIA?',o:['Resúmenes del tema','Preguntas de autoevaluación','Flashcards','Corregir el examen oficial'],a:3,e:'Resume, pone ejemplos, busca referencias, crea preguntas de repaso, flashcards y, en algunos cursos, podcast.'},
  {q:'¿Qué certificación de empresa sostenible tiene Campus Training?',o:['B Corp','Fairtrade','LEED','EMAS'],a:0,e:'Es empresa certificada B Corp.'}
 ];
 const CENTROS=[
@@ -862,10 +794,9 @@ const QUOTES=[
 ];
 
 const MOTIVES=[
- {say:'«Quiero preparar una oposición y conseguir un empleo fijo»',line:'opos',pts:['Abre con la pregunta de la web: «¿Quieres una plaza fija?»','Campus se presenta como la mejor opción en preparación: el mejor equipo y el mejor método.','Concreta la familia: Administración, Seguridad, Educación, Hacienda, Justicia, Salud, Ejército, Prisiones o Trabajo Social.','Si le falta el título que exige la plaza, deriva a Pruebas Libres.']},
  {say:'«Quiero formarme en una profesión con futuro»',line:'cursos',pts:['Cursos online con apoyo presencial en más de 35 centros.','Hasta 300 horas de prácticas para la primera experiencia laboral.','Destaca los cursos adaptados a Certificado de Profesionalidad cuando busque una acreditación oficial.','Cierra con empleabilidad: 5 años de ofertas y más de 7.000 convenios.']},
  {say:'«Quiero un título de FP con alta empleabilidad»',line:'fp',pts:['Título oficial de técnico de Grado Medio o Superior a distancia, con CEAC y Campus Training.','Grado Medio: perfiles sanitarios, administrativos e informáticos.','Grado Superior: desde DAM, DAW y ASIR hasta Higiene Bucodental o Educación Infantil.','Alternativa: examinarse por libre con Pruebas Libres de FP.']},
- {say:'«No tengo la ESO» o «no tengo acceso al grado que quiero»',line:'pl',pts:['Pruebas Libres para títulos oficiales: Graduado en ESO y Bachillerato.','Acceso a Grado Superior y a la Universidad para mayores de 25.','Es el primer paso hacia FP u Oposiciones: plantéalo como itinerario.']}
+ {say:'«No tengo la ESO» o «no tengo acceso al grado que quiero»',line:'pl',pts:['Pruebas Libres para títulos oficiales: Graduado en ESO y Bachillerato.','Acceso a Grado Superior y a la Universidad para mayores de 25.','Es el primer paso hacia la FP Oficial: plantéalo como itinerario.']}
 ];
 
 /* ---------- Estado ---------- */
@@ -891,9 +822,9 @@ const points=()=>state.quizBest+state.drillBest*10+state.objBest+doneCount()*10;
 /* ---------- Ilustraciones ---------- */
 function heroArt(){
   const tile=(x,y,c,ic,r)=>`<g transform="translate(${x} ${y}) rotate(${r} 55 55)"><rect width="110" height="110" rx="30" fill="${c}"/><g transform="translate(31 31)" color="#fff">${ico(ic,48,2.2)}</g></g>`;
-  return `<svg viewBox="0 0 440 380" role="img" aria-label="Las cuatro líneas de formación">
+  return `<svg viewBox="0 0 440 380" role="img" aria-label="Las líneas de formación">
   <circle cx="230" cy="190" r="170" fill="#0A6A4B"/><circle cx="230" cy="190" r="120" fill="none" stroke="#A8E8C4" stroke-width="2" stroke-dasharray="4 8"/>
-  ${tile(60,40,'#2C64D6','cap',-8)}${tile(260,30,'#FFD15C','book',7)}${tile(40,220,'#7348C9','shield',6)}${tile(270,215,'#FF8A65','doc',-6)}
+  ${tile(60,40,'#2C64D6','cap',-8)}${tile(260,30,'#FFD15C','book',7)}${tile(40,220,'#7348C9','star',6)}${tile(270,215,'#FF8A65','doc',-6)}
   <g transform="translate(175 135)"><rect width="110" height="110" rx="55" fill="#fff"/><g transform="translate(29 27)" color="#0B7A57">${ico('brief',52,2.2)}</g></g>
   <circle cx="400" cy="120" r="9" fill="#FFD15C"/><circle cx="30" cy="160" r="6" fill="#A8E8C4"/><circle cx="215" cy="355" r="7" fill="#FFD15C"/>
   </svg>`;
@@ -982,12 +913,6 @@ function renderStatic(){
   $('#motives').innerHTML=MOTIVES.map(m=>`<div class="motive" style="--lc:${CAT[m.line].color};--lt:${LINEMETA[m.line].t}"><div class="mh"><div class="ic">${ico(LINEMETA[m.line].i)}</div><div><p class="say">${m.say}</p><p class="to">Línea: <b>${CAT[m.line].name}</b></p></div></div><div class="mb"><ul>${m.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div></div>`).join('');
   // Objeciones (lista)
   $('#objList').innerHTML=OBJ.map(o=>{const b=o.opts.find(x=>x[1]===2);return `<details class="group" style="--lc:var(--c-opos)"><summary><span class="gdot"></span>${esc(o.o)}</summary><p style="margin:0 0 8px"><b>Responde:</b> ${esc(b[0])}</p><p style="margin:0 0 14px;color:var(--muted);font-size:15px">${esc(o.tip)}</p></details>`;}).join('');
-  // ProfIA
-  $('#profiaMock').innerHTML=`<div class="mock" role="img" aria-label="Ilustración de la pantalla de ProfIA"><div class="bar2"><i></i><i></i><i></i><span style="margin-left:8px">Tema 1 · Abrir con ProfIA</span></div><div class="split"><div class="pdf">Temario<span></span><span style="width:70%"></span><span></span><span style="width:50%"></span></div><div class="chatp"><div class="msg ai">Hola, soy ProfIA. Te ayudo a entender este tema: resúmenes, ejemplos, preguntas de repaso…</div><div class="msg me">Hazme 5 preguntas de repaso</div><div class="msg ai">Aquí tienes cinco preguntas basadas en el tema…</div><div class="tools">${[['doc','Resumen'],['mic','Podcast'],['cards','Flashcards'],['target','Preguntas']].map(([i,t])=>`<span>${ico(i,13)}${t}</span>`).join('')}</div></div></div></div><p style="font-size:13px;color:var(--muted)">Ilustración orientativa de la interfaz.</p>`;
-  $('#profiaFeat').innerHTML=[['chat','Resuelve dudas al momento','Respuestas inmediatas sobre el tema que está estudiando, sin límite de uso.','var(--c-opos)'],['doc','Resúmenes del tema','Síntesis claras y un botón de resumen automático en un clic.','var(--brand)'],['bulb','Ejemplos concretos','Para entender y asimilar de forma práctica los conceptos difíciles.','var(--c-pl)'],['search','Busca en el temario','Encuentra referencias precisas dentro de todo el material del curso.','var(--c-fp)'],['target','Preguntas de repaso','Baterías de autoevaluación a petición del alumno o sugeridas por la herramienta.','#C2412D'],['cards','Flashcards','Tarjetas de pregunta y respuesta basadas en recuerdo activo y repetición espaciada.','#0E8F79'],['mic','Podcast del tema','De 4 a 6 partes de 10 a 20 minutos. En piloto en algunas oposiciones.','#5B3AA8']].map(([i,b,p,c])=>`<div class="pillar" style="--pc:${c}"><div class="ic">${ico(i)}</div><b>${b}</b><p>${p}</p></div>`).join('');
-  document.querySelectorAll('#v-profia .tip .ic').forEach((e,i)=>e.innerHTML=ico(i?'bulb':'alert'));
-  const lab={y:'ProfIA',n:'No',q:'Consultar'};
-  $('#profiaAvail').innerHTML=CAT.opos.groups.map(g=>`<div class="fam"><h4>${esc(g.name)}</h4><ul>${g.items.map(it=>{const s=profiaStatus(it);return `<li><span class="st ${s}">${lab[s]}</span><span>${esc(it)}${s==='y'&&PROFIA_POD.has(it)?' <span class="st pod">Podcast</span>':''}</span></li>`;}).join('')}</ul></div>`).join('');
   // Opiniones
   const AVC=['#0B7A57','#2C64D6','#C27A08','#7348C9','#C2412D','#0E8F79'];
   $('#quotes').innerHTML=QUOTES.map(([n,c,t],i)=>`<figure class="quote"><blockquote>${esc(t)}</blockquote><figcaption><span class="av" style="background:${AVC[i%6]}">${esc(n[0])}</span><span><b>${esc(n)}</b>${esc(c)}</span></figcaption></figure>`).join('');
@@ -1051,7 +976,7 @@ function renderGroups(){
   L.groups.forEach(gr=>{
     const items=gr.items.filter(it=>(!q||slug(it).includes(q)||slug(gr.name).includes(q))&&(!certOnly||CERT.has(it)));
     if(!items.length)return;total+=items.length;
-    html+=`<details class="group" style="--lc:${L.color}" ${q||certOnly?'open':''}><summary><span class="gdot"></span>${esc(gr.name)}<small>${items.length}</small></summary><ul class="items">${items.map(it=>`<li><a href="${B+gr.path}" target="_blank" rel="noopener">${esc(it)}</a>${curLine==='cursos'&&CERT.has(it)?'<span class="tag" title="Adaptado a Certificado de Profesionalidad">CP</span>':''}${curLine==='opos'&&profiaStatus(it)==='y'?'<span class="tag ai" title="Incluye ProfIA">ProfIA</span>':''}</li>`).join('')}</ul></details>`;
+    html+=`<details class="group" style="--lc:${L.color}" ${q||certOnly?'open':''}><summary><span class="gdot"></span>${esc(gr.name)}<small>${items.length}</small></summary><ul class="items">${items.map(it=>`<li><a href="${B+gr.path}" target="_blank" rel="noopener">${esc(it)}</a>${curLine==='cursos'&&CERT.has(it)?'<span class="tag" title="Adaptado a Certificado de Profesionalidad">CP</span>':''}</li>`).join('')}</ul></details>`;
   });
   $('#groups').innerHTML=total?html:`<p class="empty">No hay formaciones de ${esc(L.name)} que coincidan. Prueba con otra palabra o cambia de línea.</p>`;
 }
@@ -1180,11 +1105,10 @@ function buildIndex(){
       add('sec',h.textContent.trim(),m.t,blk?blk.textContent.slice(0,600):'',()=>go(id,()=>scrollFlash(h)));
     });
   });
-  const TT={cursos:'cur',fp:'fp',pl:'pl',opos:'opos'};
+  const TT={cursos:'cur',fp:'fp',pl:'pl'};
   Object.entries(CAT).forEach(([k,l])=>l.groups.forEach(g=>g.items.forEach(it=>{
     let sub=`${l.name} › ${g.name}`;
     if(k==='cursos'&&CERT.has(it))sub+=' · Adaptado a Certificado de Profesionalidad';
-    if(k==='opos'){const st=profiaStatus(it);sub+=st==='y'?' · Con ProfIA'+(PROFIA_POD.has(it)?' y podcast':''):st==='n'?' · Sin ProfIA':' · ProfIA: consultar';}
     add(TT[k],it,sub,'',()=>go('catalogo',()=>{curLine=k;$('#q').value=it;$('#certOnly').checked=false;renderLines();renderGroups();scrollFlash($('#groups .group')||$('#groups'));}));
   })));
   FICHAS.forEach(f=>add('ficha',f.name,`Ficha comercial · ${f.tipo}`,f.perfil+' '+f.ruta,()=>go('fichas',()=>openFicha(f.id))));
@@ -1213,7 +1137,7 @@ function runSearch(){
   }).filter(Boolean).sort((a,b)=>b[0]-a[0]).slice(0,40).map(x=>x[1]);
   gShown=res;gSel=res.length?0:-1;
   $('#gcount').textContent=res.length?`${res.length===40?'40+':res.length} resultados para «${raw}»`:`Sin resultados para «${raw}»`;
-  $('#gresults').innerHTML=res.length?res.map((e,i)=>{const [lab,c,ic]=GTYPES[e.type];return `<button type="button" class="gres${i===0?' sel':''}" role="option" data-i="${i}" style="--gc:${c}"><span class="ic">${ico(ic,18)}</span><span><b>${hl(e.title,terms)}</b><small>${esc(e.sub)}</small></span><span class="k">${lab}</span></button>`;}).join(''):`<p class="gempty">Prueba con otra palabra: el nombre de una formación, una ciudad, «certificado», «ProfIA», «precio»…</p>`;
+  $('#gresults').innerHTML=res.length?res.map((e,i)=>{const [lab,c,ic]=GTYPES[e.type];return `<button type="button" class="gres${i===0?' sel':''}" role="option" data-i="${i}" style="--gc:${c}"><span class="ic">${ico(ic,18)}</span><span><b>${hl(e.title,terms)}</b><small>${esc(e.sub)}</small></span><span class="k">${lab}</span></button>`;}).join(''):`<p class="gempty">Prueba con otra palabra: el nombre de una formación, una ciudad, «certificado», «FP», «precio»…</p>`;
   $('#gresults').querySelectorAll('.gres').forEach(b=>b.onclick=()=>gShown[+b.dataset.i].act());
   panel.hidden=false;
 }
